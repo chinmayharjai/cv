@@ -1,0 +1,192 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\textbf{CHINMAY HARJAI} +91 7878709846 \textbar{}
+\href{mailto:chinmayharjai@gmail.com}{\nolinkurl{chinmayharjai@gmail.com}}
+\uline{\textbar{}}
+\href{https://github.com/chinmayharjai/}{Github}\uline{\textbar{}}
+\href{https://www.linkedin.com/in/chinmayharjai/}{LinkedIn}
+
+\hypertarget{education}{%
+\section{EDUCATION}\label{education}}
+
+\begin{itemize}
+\item
+  \textbf{BTech Electrical Engineering,} National Institute of
+  Technology, Jaipur 2025.
+\end{itemize}
+
+\hypertarget{experience}{%
+\section{EXPERIENCE}\label{experience}}
+
+\begin{quote}
+\textbf{ICICI Bank ( July 2025 -- Present)\textbar{} Data Engineer,
+Mumbai}
+\end{quote}
+
+\begin{itemize}
+\item
+  Worked with \textbf{IBM InfoSphere DataStage and Designer} to schedule
+  and monitor automated ETL jobs, ensuring reliable batch processing and
+  timely data availability across enterprise systems.
+\item
+  Analyzed and resolved \textbf{UCIC (Unique Customer Identification
+  Code) mismatches} by investigating MDM deduplication rules and API
+  matching logic, improving customer identity accuracy across downstream
+  applications.
+\item
+  Built and enhanced \textbf{Azure ETL pipelines} using \textbf{Azure
+  Data Factory and Azure Databricks} to ingest and transform
+  source-system data, delivering analytics-ready datasets to business
+  and risk teams.
+\item
+  Implemented \textbf{PII and PCI data redaction} using \textbf{regular
+  expressions} to identify and obscure sensitive fields across
+  \textbf{on-premise Oracle and MySQL databases}, strengthening data
+  security and compliance controls.
+\end{itemize}
+
+\hypertarget{projects}{%
+\section{PROJECTS}\label{projects}}
+
+\textbf{Credit Default Risk Prediction}
+
+\begin{itemize}
+\item
+  Built a supervised credit default prediction model on customer
+  financial and behavioural data, performing EDA and feature engineering
+  such as income-to-loan and EMI-to-income ratios to capture repayment
+  capacity better.
+\item
+  Modelled non-linear risk patterns using an artificial neural network
+  instead of linear models, improving separation between defaulters and
+  non-defaulters.
+\item
+  Evaluated model performance using ROC-AUC to address class imbalance
+  and focus on risk ranking rather than raw accuracy while achieving
+  ROC-AUC of \textbf{0.87} on test data.
+\end{itemize}
+
+\begin{quote}
+\textbf{Financial Text Summarization \& Insight Generation (NLP + LLM)}
+\end{quote}
+
+\begin{itemize}
+\item
+  Analysed and implemented a text summarisation pipeline for financial
+  reports using transformer-based models, achieving an \textbf{ROUGE-L
+  score of 0.72}.
+\item
+  Improved summary coherence through preprocessing and chunking
+  strategies for long documents by implementing an RAG pipeline.
+\item
+  Reduced average document length by \textbf{60\%} while preserving key
+  risk insights for stakeholder consumption.
+\end{itemize}
+
+\textbf{Customer Spending \& Risk Analytics}
+
+\begin{itemize}
+\item
+  Performed end-to-end customer spending analysis by querying
+  transactional data from PostgreSQL and integrating results into Python
+  workflows.
+\item
+  Used advanced SQL constructs such as CTEs, window functions, and
+  aggregations to identify trends, outliers, and high-risk customer
+  segments.
+\item
+  Translated analytical outputs into interpretable insights to support
+  business and risk decision-making.
+\end{itemize}
+
+\hypertarget{technical-skills}{%
+\section{TECHNICAL SKILLS}\label{technical-skills}}
+
+\begin{itemize}
+\item
+  Programming language: Python, SQL, PySpark
+\item
+  AI \& ML: Pytorch, TensorFlow, RNN, LSTM, CNN, NLP, Random Forest, XG
+  Boost
+\item
+  Database \& Analytics Tools: ETL (IBM DataStage), MDM, Azure data
+  factory, Databricks.
+\item
+  Data visualisation tools: Tableau, Power Bi
+\item
+  Software: Visual Studio Code, GitHub Desktop, MS Office (Excel, Word,
+  PowerPoint)
+\item
+  Others: Dynatrace, Postman, Spark SQL, SQL Developer
+\end{itemize}
+
+\begin{quote}
+\textbf{LEADERSHIP SKILLS}
+\end{quote}
+
+\begin{itemize}
+\item
+  \textbf{Executive, Think India MNIT Club:} Led the planning and
+  execution of large-scale events with \textbf{5,000+ attendees},
+  managing and coordinating a team of \textbf{20+ students} to ensure
+  smooth operations and delivery.
+\item
+  \textbf{Founder, Unicorn Club (2022):} Built and scaled a community of
+  entrepreneurs, organizing and hosting \textbf{30+ talks} focused on
+  practical business insights, collaboration, and knowledge sharing.
+\end{itemize}
+
+\end{document}
