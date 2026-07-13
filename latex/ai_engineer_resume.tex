@@ -1,0 +1,80 @@
+%% ai_engineer_resume.tex
+%% -----------------------------------------------------------------------------
+%% AI Engineer resume -- CONTENT ONLY.
+%%
+%% All styling lives in resume.cls. Edit the text below to update the resume;
+%% do NOT change fonts/spacing/colours here (do that in resume.cls) so the
+%% template stays consistent. Compile with:  pdflatex ai_engineer_resume.tex
+%% -----------------------------------------------------------------------------
+\documentclass{resume}
+
+\begin{document}
+
+% ---- Header ----------------------------------------------------------------
+\name{Chinmay Harjai}
+\contact{%
+  \phone{+91 7878709846} \contactsep
+  \email{chinmayharjai@gmail.com} \contactsep
+  \github{chinmayharjai}{GitHub} \contactsep
+  \linkedin{https://www.linkedin.com/in/chinmayharjai}{LinkedIn}%
+}
+
+% ---- Education -------------------------------------------------------------
+\section{Education}
+\begin{itemize}
+  \education{BTech, Electrical Engineering}{National Institute of Technology, Jaipur}{2025}
+\end{itemize}
+
+% ---- Experience ------------------------------------------------------------
+\section{Experience}
+\entry{ICICI Bank \textnormal{— Data Engineer, Mumbai}}{July 2025 -- Present}
+\begin{itemize}
+  \item Worked with IBM InfoSphere DataStage and Designer to schedule and monitor automated ETL jobs, ensuring reliable batch processing and timely data availability across enterprise systems.
+  \item Analyzed and resolved UCIC (Unique Customer Identification Code) mismatches by investigating MDM deduplication rules and API matching logic, improving customer identity accuracy across downstream applications.
+  \item Built and enhanced Azure ETL pipelines using Azure Data Factory and Azure Databricks to ingest and transform source-system data, delivering analytics-ready datasets to business and risk teams.
+  \item Implemented PII and PCI data redaction using regular expressions to identify sensitive fields across on-premise Oracle and MySQL databases, strengthening data security and compliance controls.
+\end{itemize}
+
+% ---- Projects --------------------------------------------------------------
+\section{Projects}
+
+\project{Multi-Agent Content Intelligence \& Publishing System}
+\begin{itemize}
+  \item Designed a multi-agent system using LangGraph where specialised agents (research, drafting, quality-check) coordinate via shared state to autonomously generate and publish LinkedIn content.
+  \item Exposed agent orchestration logic through a FastAPI microservice, enabling async job submission, streaming LLM responses, and webhook-based triggering from the n8n workflow layer.
+  \item Containerised the full stack with Docker on GCP, managing session persistence, secret injection, and retry logic for production-grade reliability.
+\end{itemize}
+
+\project{Conversational AI Assistant with Context Memory (WhatsApp)}
+\begin{itemize}
+  \item Built a production conversational AI assistant on WhatsApp using WAHA + LangChain, implementing session-based context management and a short-term memory buffer to maintain conversation continuity.
+  \item Designed a vector-backed retrieval layer (ChromaDB) for FAQ grounding, reducing hallucinated responses on domain-specific queries.
+  \item Deployed an async event-handling backend with FastAPI and Docker on a GCP Linux VM, integrating a rule-based AI classifier to filter unsafe or off-topic responses before delivery.
+\end{itemize}
+
+\project{Agentic RAG Pipeline for Quantitative Alpha Research}
+\begin{itemize}
+  \item Built a RAG pipeline using LangGraph to orchestrate an autonomous research agent that ingests unstructured financial documents, retrieves relevant context via semantic search, and generates structured alpha signals using LLMs.
+  \item Built a vector retrieval layer using ChromaDB with Gemini embeddings and cosine similarity search, grounding LLM outputs to reduce hallucination on domain-specific financial data.
+  \item Implemented async Python workflows with queue-based parallel execution and SQL logging for experiment tracking; used the WorldQuant Brain API to programmatically submit alpha formulas and retrieve backtesting results.
+\end{itemize}
+
+% ---- Technical Skills ------------------------------------------------------
+\section{Technical Skills}
+\begin{itemize}
+  \skill{Programming Languages}{Python, SQL}
+  \skill{AI \& ML}{PyTorch, TensorFlow, LSTM, NLP, LangChain, LangGraph, Hugging Face, ChromaDB}
+  \skill{Database \& Analytics Tools}{ETL (IBM DataStage), MDM, Azure Data Factory, Databricks}
+  \skill{Data Visualisation}{Tableau, Power BI}
+  \skill{Software}{Visual Studio Code, GitHub Desktop, MS Office (Excel, Word, PowerPoint), GCP}
+  \skill{Others}{Dynatrace, Postman, Spark SQL, SQL Developer, n8n, Docker}
+\end{itemize}
+
+% ---- Leadership ------------------------------------------------------------
+\section{Leadership}
+\begin{itemize}
+  \item \textbf{Executive, Think India MNIT Club:} Led the planning and execution of large-scale events with 5,000+ attendees, managing and coordinating a team of 20+ students to ensure smooth operations and delivery.
+  \item \textbf{Founder, Unicorn Club (2022):} Built and scaled a community of entrepreneurs, organizing and hosting 30+ talks focused on practical business insights, collaboration, and knowledge sharing.
+\end{itemize}
+
+\end{document}

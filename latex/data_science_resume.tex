@@ -1,0 +1,80 @@
+%% data_science_resume.tex
+%% -----------------------------------------------------------------------------
+%% Data Science resume -- CONTENT ONLY.
+%%
+%% All styling lives in resume.cls. Edit the text below to update the resume;
+%% do NOT change fonts/spacing/colours here (do that in resume.cls) so the
+%% template stays consistent. Compile with:  pdflatex data_science_resume.tex
+%% -----------------------------------------------------------------------------
+\documentclass{resume}
+
+\begin{document}
+
+% ---- Header ----------------------------------------------------------------
+\name{Chinmay Harjai}
+\contact{%
+  \phone{+91 7878709846} \contactsep
+  \email{chinmayharjai@gmail.com} \contactsep
+  \github{chinmayharjai}{GitHub} \contactsep
+  \linkedin{https://www.linkedin.com/in/chinmayharjai}{LinkedIn}%
+}
+
+% ---- Education -------------------------------------------------------------
+\section{Education}
+\begin{itemize}
+  \education{BTech, Electrical Engineering}{National Institute of Technology, Jaipur}{2025}
+\end{itemize}
+
+% ---- Experience ------------------------------------------------------------
+\section{Experience}
+\entry{ICICI Bank \textnormal{— Data Engineer, Mumbai}}{July 2025 -- Present}
+\begin{itemize}
+  \item Worked with IBM InfoSphere DataStage and Designer to schedule and monitor automated ETL jobs, ensuring reliable batch processing and timely data availability across enterprise systems.
+  \item Analyzed and resolved UCIC (Unique Customer Identification Code) mismatches by investigating MDM deduplication rules and API matching logic, improving customer identity accuracy across downstream applications.
+  \item Built and enhanced Azure ETL pipelines using Azure Data Factory and Azure Databricks to ingest and transform source-system data, delivering analytics-ready datasets to business and risk teams.
+  \item Implemented PII and PCI data redaction using regular expressions to identify and obscure sensitive fields across on-premise Oracle and MySQL databases, strengthening data security and compliance controls.
+\end{itemize}
+
+% ---- Projects --------------------------------------------------------------
+\section{Projects}
+
+\projectlink{Credit Default Risk Prediction}{https://github.com/chinmayharjai}
+\begin{itemize}
+  \item Built a supervised credit default prediction model on customer financial and behavioural data, performing EDA and feature engineering such as income-to-loan and EMI-to-income ratios to better capture repayment capacity.
+  \item Modelled non-linear risk patterns using an artificial neural network instead of linear models, improving separation between defaulters and non-defaulters.
+  \item Evaluated model performance using ROC-AUC to address class imbalance and focus on risk ranking rather than raw accuracy, achieving an ROC-AUC of 0.87 on test data.
+\end{itemize}
+
+\projectlink{Financial Text Summarization \& Insight Generation (NLP + LLM)}{https://github.com/chinmayharjai}
+\begin{itemize}
+  \item Analysed and implemented a text summarisation pipeline for financial reports using transformer-based models, achieving a ROUGE-L score of 0.72.
+  \item Improved summary coherence through preprocessing and chunking strategies for long documents by implementing a RAG pipeline.
+  \item Reduced average document length by 60\% while preserving key risk insights for stakeholder consumption.
+\end{itemize}
+
+\projectlink{Customer Spending \& Risk Analytics}{https://github.com/chinmayharjai}
+\begin{itemize}
+  \item Performed end-to-end customer spending analysis by querying transactional data from PostgreSQL and integrating results into Python workflows.
+  \item Used advanced SQL constructs such as CTEs, window functions, and aggregations to identify trends, outliers, and high-risk customer segments.
+  \item Translated analytical outputs into interpretable insights to support business and risk decision-making.
+\end{itemize}
+
+% ---- Technical Skills ------------------------------------------------------
+\section{Technical Skills}
+\begin{itemize}
+  \skill{Programming Languages}{Python, SQL, PySpark}
+  \skill{AI \& ML}{PyTorch, TensorFlow, RNN, LSTM, CNN, NLP, Random Forest, XGBoost}
+  \skill{Database \& Analytics Tools}{ETL (IBM DataStage), MDM, Azure Data Factory, Databricks}
+  \skill{Data Visualisation}{Tableau, Power BI}
+  \skill{Software}{Visual Studio Code, GitHub Desktop, MS Office (Excel, Word, PowerPoint)}
+  \skill{Others}{Dynatrace, Postman, Spark SQL, SQL Developer}
+\end{itemize}
+
+% ---- Leadership ------------------------------------------------------------
+\section{Leadership}
+\begin{itemize}
+  \item \textbf{Executive, Think India MNIT Club:} Led the planning and execution of large-scale events with 5,000+ attendees, managing and coordinating a team of 20+ students to ensure smooth operations and delivery.
+  \item \textbf{Founder, Unicorn Club (2022):} Built and scaled a community of entrepreneurs, organizing and hosting 30+ talks focused on practical business insights, collaboration, and knowledge sharing.
+\end{itemize}
+
+\end{document}
