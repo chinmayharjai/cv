@@ -38,21 +38,21 @@
 % ---- Projects --------------------------------------------------------------
 \section{Projects}
 
-\project{Multi-Agent Content Intelligence \& Publishing System}
+\projectlink{Multi-Agent Content Intelligence \& Publishing System}{https://github.com/chinmayharjai}
 \begin{itemize}
   \item Designed a multi-agent system using LangGraph where specialised agents (research, drafting, quality-check) coordinate via shared state to autonomously generate and publish LinkedIn content.
   \item Exposed agent orchestration logic through a FastAPI microservice, enabling async job submission, streaming LLM responses, and webhook-based triggering from the n8n workflow layer.
   \item Containerised the full stack with Docker on GCP, managing session persistence, secret injection, and retry logic for production-grade reliability.
 \end{itemize}
 
-\project{Conversational AI Assistant with Context Memory (WhatsApp)}
+\projectlink{Conversational AI Assistant with Context Memory (WhatsApp)}{https://github.com/chinmayharjai}
 \begin{itemize}
   \item Built a production conversational AI assistant on WhatsApp using WAHA + LangChain, implementing session-based context management and a short-term memory buffer to maintain conversation continuity.
   \item Designed a vector-backed retrieval layer (ChromaDB) for FAQ grounding, reducing hallucinated responses on domain-specific queries.
   \item Deployed an async event-handling backend with FastAPI and Docker on a GCP Linux VM, integrating a rule-based AI classifier to filter unsafe or off-topic responses before delivery.
 \end{itemize}
 
-\project{Agentic RAG Pipeline for Quantitative Alpha Research}
+\projectlink{Agentic RAG Pipeline for Quantitative Alpha Research}{https://github.com/chinmayharjai}
 \begin{itemize}
   \item Built a RAG pipeline using LangGraph to orchestrate an autonomous research agent that ingests unstructured financial documents, retrieves relevant context via semantic search, and generates structured alpha signals using LLMs.
   \item Built a vector retrieval layer using ChromaDB with Gemini embeddings and cosine similarity search, grounding LLM outputs to reduce hallucination on domain-specific financial data.
